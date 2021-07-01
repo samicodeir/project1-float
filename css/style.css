@@ -491,3 +491,188 @@ header {
 .footer span {
   color: rgb(237, 242, 244);
 }
+
+/* /////////////////////////////////////////// */ /* @media query or responsive
+*/ /* 0 until the 768 mobil */
+@media (max-width: 767px) {
+  /* header & footer */
+  /* header */
+  .header-logo {
+    width: 100%;
+    padding: 25px 0px;
+    float: left;
+    text-align: center;
+  }
+  .menu {
+    float: right;
+    width: 100%;
+  }
+  .menu li {
+    float: none;
+    text-align: center;
+    box-shadow: 2px 2px 5px 2px black;
+  }
+  .menu li:last-child {
+    box-shadow: 2px 0px 5px 1px black;
+  }
+  .menu li a {
+    font-size: 25px;
+  } /* footer */
+  .footer {
+    font-size: 20px;
+  } /* home page */ /* hero */
+  .hero {
+    background-size: cover;
+  }
+  .hero-content {
+    padding: 50px 0;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    font-size: 18px;
+  }
+  .hero-content a {
+    font-size: 16px;
+  } /* history */
+  .history .history-child {
+    float: none;
+    width: 100%;
+  } /* history image */
+  .history .history-image {
+    background: url(../images/hero2-background.jpg) no-repeat 100% bottom;
+    background-size: cover;
+  } /* history content */
+  .history .history-content {
+    padding: 20px 10px;
+    height: auto;
+  } /* services */
+  .services .service-box {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .services::after {
+    display: none;
+  } /*
+    gallary */
+  .gallary .col {
+    float: none;
+    width: 100%;
+  } /* contact us page */ /*
+    contact us contact */
+  .contact-us-content > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .contact-us-content > p {
+    font-size: 20px;
+  } /* find-out */
+  .address-box {
+    width: 100%;
+    float: none;
+    padding: 10px 20px;
+  }
+  .address .address-box:not(:nth-child(3)) {
+    border-bottom: 3px solid #000;
+  }
+  .address .address-box i {
+    padding: 20px;
+  }
+  .address .address-box p {
+    padding: 10px;
+  } /*
+    about us page */ /* about us content */
+  .about-us-content-left {
+    width: 100%;
+    float: none;
+  }
+  .about-us-content-left h1 {
+    text-align: center;
+  }
+  .about-us-content-right {
+    width: 100%;
+    float: none;
+    margin-top: 30px;
+  }
+  .about-us-content-right img {
+    width: 100%;
+  }
+} /* 768 until the 1024 tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* header & footer */ /*
+    header */ /* footer */
+  .footer {
+    font-size: 18px;
+  } /* hero */
+  .hero {
+    background-size: cover;
+  }
+  .hero-content {
+    padding: 100px 10px;
+  } /* history */
+  .history .history-image {
+    background: url(../images/hero2-background.jpg) no-repeat 100% bottom;
+    background-size: cover;
+  }
+  .history .history-child {
+    height: 450px;
+  }
+  .history .history-content {
+    padding: 50px 20px;
+  } /* services
+    */
+  .services .service-box {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .services::after {
+    content: "";
+    border: 20px solid transparent;
+    border-top-color: dodgerblue;
+  } /* gallary */
+  .gallary .col::before {
+    content: attr(data-title2);
+    height: 25px;
+    line-height: 25px;
+  } /* contact us page */ /* find out */
+  .address-box {
+    padding: 50px 10px;
+  }
+}
+@media (min-width: 0px) and (max-width: 1023px) {
+  /* about us page */ /*
+    employee sayse */
+  .employee-sayse {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/hero-background.jpg) no-repeat 87% center;
+    background-size: cover;
+  }
+  .employee-box img {
+    width: 150px;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+  .employee-box p {
+    width: 100%;
+    padding-left: 0;
+    float: none;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  /* services */
+  .services::after {
+    content: "";
+    border: 25px solid transparent;
+    border-top-color: dodgerblue;
+  } /*
+    gallary */
+  .gallary .col::before {
+    font-size: 12px;
+  }
+}
